@@ -1,0 +1,5 @@
+ru:
+  controllers:
+    comments:
+      created: Добавлен комментарий
+      error: Ошибка при добавлении комментария
