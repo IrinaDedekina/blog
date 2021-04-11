@@ -1,11 +1,11 @@
 <div class="col-sm-12 col-md-12">
-  <div class="thumbnail">
-    <div class="thumbnail-inner event-info-inner">
+  <div class="thumbnail gy-3">
+    <div class="thumbnail-inner border-top border-secondary">
       <div class="caption">
         <div class="event-description">
-          <h3><%= link_to post.title, post_path(post) %></h3>
-          <h3><small><%= post.created_at %></small></h3>
-          <h3><%= post.body %></h3>
+          <h4 class="fw-bold"><%= link_to post.title, post_path(post), class: 'text-decoration-none text-reset' %></h3>
+          <h6 class="text-secondary"><%= post.body %></h3>
+          <small class="text-secondary"><%= post.created_at %></small>
         </div>
       </div>
     </div>

@@ -1,65 +1,3 @@
-      <!--== Start Header Wrapper ==-->
-      <header class="header">
-        <!-- header-top start -->
-        <div class="header-top d-none d-lg-block">
-          <div class="container">
-            <div class="row row-cols-2">
-              <div class="col">
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- header-top end -->
-
-        <!-- header-middle start -->
-        <div class="header-middle mobile-sticky">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="header-middle-content">
-                  <div class="header-logo">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- header-middle end -->
-
-        <!-- header-bottom start -->
-        <div class="header-bottom d-none d-lg-block">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div
-                  class="d-flex flex-wrap align-items-center justify-content-between"
-                >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- header-bottom end -->
-        <!-- header-bottom start -->
-        <div class="header-bottom sticky-header d-none d-lg-block">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- header-bottom end -->
-      </header>
-
-      <!--== End Header Wrapper ==-->
-
-      <main class="main-content site-wrapper-reveal">
-
-         <!--== Start Team Area Wrapper ==-->
         <section class="team-area team-default-area" data-bg-color="#f3f3f3">
           <div class="container">
             <div class="row">
@@ -70,7 +8,55 @@
                   data-aos-duration="1000"
                 >
                   <h2 class="title">
-                    <span>Posts</span>
+                    <span class="fs-3 text-black-60 text-success fw-bold">Об авторе</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="swiper-container team-slider-container"
+                  data-aos="fade-up"
+                  data-aos-duration="1300"
+                >
+                  <div class="swiper-wrapper team-slider">
+                    <!--== Start Team Item ==-->
+                    <div class="swiper-slide team-member">
+                      <div class="content">
+                        <div class="member-info">
+                          <div class="buffer-both">
+                            <p class="fs-4 text-center text-success"> Всем привет! Меня зовут Екатерина и я веду блог о разных классных животных) </p>
+                            <p class="fs-4 text-center text-success"> Присаживайтесь поудобнее и читайте мои посты!)) </p>
+                          </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!--== End Team Item ==-->
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--== End Team Area Wrapper ==-->
+
+        <section class="team-area team-default-area" data-bg-color="#f3f3f3">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="section-title text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <h2 class="title">
+                    <span class="fs-3 text-success fw-bold">Посты</span>
                   </h2>
                 </div>
               </div>
@@ -89,10 +75,10 @@
                         <div class="member-info">
                           <div class="buffer-both">
                             <% if user_signed_in? %>
-                              <%= link_to 'Создать событие', new_post_path, class: 'btn btn-success' %>
+                              <%= link_to 'Создать событие', new_post_path, class: 'btn btn-grey' %>
                             <% end %>
                           </div>
-                            <%= render partial: 'posts/post', collection: @posts %>
+                            <%= render partial: 'posts/post', collection: @posts%>
                           </div>
 
                         </div>
@@ -126,22 +112,3 @@
           </div>
         </div>
       </footer>
-      <!--== Scroll Top Button ==-->
-      <div class="scroll-to-top"><span class="icofont-rounded-up"></span></div>
-    </div>
-
-    <!--=======================Javascript============================-->
-
-    <!--=== Modernizr Min Js ===-->
-    <script src="assets/js/modernizr.js"></script>
-    <!--=== Popper Min Js ===-->
-    <script src="assets/js/popper.min.js"></script>
-    <!--=== Bootstrap Min Js ===-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!--=== Plugin Collection Js ===-->
-    <script src="assets/js/plugincollection.js"></script>
-
-    <!--=== Custom Js ===-->
-    <script src="assets/js/custom.js"></script>
-  </body>
-</html>

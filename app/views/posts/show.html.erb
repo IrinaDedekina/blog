@@ -5,11 +5,11 @@
         style: "background-image: url(#{asset_path('post.jpg')})" %>
 
       <div class="event-info-inner row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="event-description">
             <h1><%= @post.title %></h1>
-            <h3><%= @post.created_at %></h3>
             <p><%= @post.body %></p>
+            <small class="text-secondary"><%= @post.created_at %></small>
           </div>
 
           <div class="buffer-top">
@@ -24,7 +24,7 @@
   </div>
 
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <div class="event-comments buffer-top">
         <div class="buffer-both">
           <%= render partial: 'comments/form', locals: { comment: @comment || Comment.new(post: @post) } %>
