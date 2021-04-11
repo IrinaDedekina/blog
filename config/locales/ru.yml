@@ -1,5 +1,9 @@
 ru:
   controllers:
     comments:
-      created: Добавлен комментарий
+      created: Комментарий успешно добавлен
       error: Ошибка при добавлении комментария
+    posts:
+      created: Пост успешно создан
+      updated: Пост успешно обновлен
+      destroyed: Пост успешно удален
