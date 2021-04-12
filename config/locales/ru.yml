@@ -12,3 +12,7 @@ ru:
       comment:
         user_name: Ваше имя
         body: Комментарий
+
+  app:
+    name: 'Blog'
+    developer : 'Irina Dedekina'
