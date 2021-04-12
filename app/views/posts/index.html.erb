@@ -1,84 +1,84 @@
-        <section class="team-area team-default-area" data-bg-color="#f3f3f3">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div
-                  class="section-title text-center"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                >
-                  <h2 class="title">
-                    <span class="fs-3 text-black-60 text-success fw-bold">Об авторе</span>
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div
-                  class="swiper-container team-slider-container"
-                  data-aos="fade-up"
-                  data-aos-duration="1300"
-                >
-                  <div class="swiper-wrapper team-slider">
-                    <div class="swiper-slide team-member">
-                      <div class="content">
-                        <div class="member-info">
-                          <div class="buffer-both">
-                            <p class="fs-4 text-center text-success"> Всем привет! Меня зовут Екатерина и я веду блог о разных классных животных) </p>
-                            <p class="fs-4 text-center text-success"> Присаживайтесь поудобнее и читайте мои посты!)) </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+<section class="team-area team-default-area" data-bg-color="#f3f3f3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="section-title text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2 class="title">
+            <span class="fs-3 text-black-60 text-success fw-bold">Об авторе</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="swiper-container team-slider-container"
+          data-aos="fade-up"
+          data-aos-duration="1300"
+        >
+          <div class="swiper-wrapper team-slider">
+            <div class="swiper-slide team-member">
+              <div class="content">
+                <div class="member-info">
+                  <div class="buffer-both">
+                    <p class="fs-4 text-center text-success"> Всем привет! Меня зовут Екатерина и я веду блог о разных классных животных) </p>
+                    <p class="fs-4 text-center text-success"> Присаживайтесь поудобнее и читайте мои посты!)) </p>
                   </div>
-                  <div class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section class="team-area team-default-area" data-bg-color="#f3f3f3">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div
-                  class="section-title text-center"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                >
-                  <h2 class="title">
-                    <span class="fs-3 text-success fw-bold">Посты</span>
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div
-                  class="swiper-container team-slider-container"
-                  data-aos="fade-up"
-                  data-aos-duration="1300"
-                >
-                  <div class="swiper-wrapper team-slider">
-                    <div class="swiper-slide team-member">
-                      <div class="content">
-                        <div class="member-info">
-                          <div class="buffer-both">
-                            <% if user_signed_in? %>
-                              <%= link_to 'Создать событие', new_post_path, class: 'btn btn-grey' %>
-                            <% end %>
-                          </div>
-                            <%= render partial: 'posts/post', collection: @posts%>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+<section class="team-area team-default-area" data-bg-color="#f3f3f3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="section-title text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2 class="title">
+            <span class="fs-3 text-success fw-bold">Посты</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="swiper-container team-slider-container"
+          data-aos="fade-up"
+          data-aos-duration="1300"
+        >
+          <div class="swiper-wrapper team-slider">
+            <div class="swiper-slide team-member">
+              <div class="content">
+                <div class="member-info">
+                  <div class="buffer-both">
+                    <% if user_signed_in? %>
+                      <%= link_to 'Создать событие', new_post_path, class: 'btn btn-grey' %>
+                    <% end %>
                   </div>
-                  <div class="swiper-pagination"></div>
+                    <%= render partial: 'posts/post', collection: @posts%>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
